@@ -3,7 +3,6 @@ use Test::Base;
 plan tests => 4 * blocks;
 
 use Geo::Direction::Distance;
-use Location::GeoTool;
 
 run {
     my $block       = shift;

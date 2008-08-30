@@ -1,6 +1,6 @@
 ---
 name: Geo-Direction-Distance
-version: 0.0.1
+version: 0.0.2
 author:
   - 'OHTSUKA Ko-hei <nene@kokogiko.net>'
 abstract: 'Process between Lat-Lng coordinates and direction - distance'
@@ -16,8 +16,8 @@ build_requires:
 provides:
   Geo::Direction::Distance:
     file: lib/Geo/Direction/Distance.pm
-    version: 0.0.1
-generated_by: Module::Build version 0.2808
+    version: 0.0.2
+generated_by: Module::Build version 0.280801
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2

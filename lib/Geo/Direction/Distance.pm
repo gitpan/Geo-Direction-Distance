@@ -5,7 +5,7 @@ use strict;
 use Carp;
 use Math::Trig qw(tan);
 
-use version; our $VERSION = qv('0.0.1');
+use version; our $VERSION = qv('0.0.2');
 
 use vars qw(@ISA @EXPORT);
 use Exporter;
@@ -343,11 +343,6 @@ __END__
 Geo::Direction::Distance - Process between Lat-Lng coordinates and direction - distance
 
 
-=head1 VERSION
-
-This document describes Geo::Direction::Distance version 0.0.1
-
-
 =head1 SYNOPSIS
 
   use Geo::Direction::Distance;
@@ -371,6 +366,30 @@ This document describes Geo::Direction::Distance version 0.0.1
   # You can also set original ellipsoid parameter.
   # parameter keys are same with proj4.
   my @tolatlng    = dirdist2latlng(@fromlatlng,$dir,$dist,{a => 6378165.0, rf => 298.3});
+
+
+=head1 EXPORT METHODS
+
+=over
+
+=item * dirdist2latlng
+
+=item * latlng2dirdist
+
+=back
+
+
+=head1 INTERNAL METHODS
+
+=over
+
+=item * p2v_pp
+
+=item * set_af
+
+=item * v2p_pp
+
+=back
 
 
 =head1 TODO
